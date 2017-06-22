@@ -1,0 +1,299 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\BindImage.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\BindImage.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 25
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 BindImage"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,4,20,20
+    LTEXT           "BindImage3.05",IDC_STATIC,40,3,48,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2012 by Crazyfrog",IDC_STATIC,40,13,119,8
+    DEFPUSHBUTTON   "确定",IDOK,183,8,50,16,WS_GROUP
+    LTEXT           "About QQ:519475552",IDC_STATIC,94,3,77,8
+END
+
+IDD_BINDIMAGE_DIALOG DIALOGEX 0, 0, 205, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_LEFTSCROLLBAR | WS_EX_APPWINDOW
+CAPTION "BindImage3.05 By Crazyfrog(QQ519475552)"
+FONT 16, "MS Shell Dlg", 700, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TABALL,"SysTabControl32",TCS_BUTTONS,0,0,205,163,WS_EX_CLIENTEDGE
+END
+
+IDD_PACK DIALOGEX 0, 0, 234, 167
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 14, "MS Shell Dlg", 700, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "生成",IDOK,148,116,71,41
+    EDITTEXT        IDC_FILEEDIT,49,82,128,12,ES_AUTOHSCROLL
+    RTEXT           "文件名：",IDC_TEXTSTATIC,14,84,33,9
+    RTEXT           "留边距：",IDC_TEXTSTATIC2,14,3,33,9
+    EDITTEXT        IDC_SPACE,49,1,170,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "最大宽：",IDC_TEXTSTATIC3,14,25,33,9
+    EDITTEXT        IDC_MAXW,49,23,170,14,ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "最大高：",IDC_TEXTSTATIC4,14,47,33,9
+    EDITTEXT        IDC_MAXH,49,45,170,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "子图重复使用(慢)",IDC_SUBITEMUSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,145,68,10
+    RTEXT           "类型：",IDC_TEXTSTATIC5,14,65,33,9
+    COMBOBOX        IDC_COMBOTYPE,49,63,170,59,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "2的幂图",IDC_2MI,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,120,42,10
+    CONTROL         "生成容量优化(慢)",IDC_OPTIMIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,17,120,69,10
+    RTEXT           "文件夹：",IDC_TEXTSTATIC6,14,101,33,9
+    DEFPUSHBUTTON   "打开",IDOPFILE,178,80,41,33
+    COMBOBOX        IDC_FILEHOSTORY,49,99,128,64,CBS_DROPDOWN | CBS_AUTOHSCROLL | CBS_NOINTEGRALHEIGHT | CBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP,WS_EX_CLIENTEDGE
+    CONTROL         "lua脚本传递",IDC_LUACORE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,93,145,47,10
+END
+
+IDD_REPACK DIALOGEX 0, 0, 254, 165
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 14, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDITPACKIN,29,37,142,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDITPACKOUT,29,72,142,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "生成",IDC_BUTTONBUILD,175,113,50,14
+    PUSHBUTTON      "打开文件",IDC_BUTTONSRC,175,37,50,14
+    PUSHBUTTON      "输出文件夹",IDC_BUTTONOUT,175,72,50,14
+    CONTROL         "生成容量优化(慢)",IDC_REOPTIMIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,116,75,10
+END
+
+IDD_OPTIMIZE DIALOGEX 0, 0, 237, 170
+STYLE DS_ABSALIGN | DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 14, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "打开要优化的图片文件夹",IDOK,59,86,118,14
+    LTEXT           "文件可多选",IDC_STATIC,96,69,41,8
+END
+
+IDD_PROCESS DIALOGEX 0, 0, 381, 193
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_PROGRESSBAR,"msctls_progress32",WS_BORDER,7,124,367,62
+    CONTROL         "",IDC_PROGRESSBARSUB,"msctls_progress32",WS_BORDER,7,7,367,62
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,5,1
+ PRODUCTVERSION 3,0,5,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileDescription", "合成小图片"
+            VALUE "FileVersion", "3.0.5.1"
+            VALUE "InternalName", "BindImage.exe"
+            VALUE "LegalCopyright", "Crazyfrog"
+            VALUE "OriginalFilename", "BindImage.exe"
+            VALUE "ProductName", "BindImage"
+            VALUE "ProductVersion", "3.0.5.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 233
+        BOTTOMMARGIN, 24
+    END
+
+    IDD_BINDIMAGE_DIALOG, DIALOG
+    BEGIN
+    END
+
+    IDD_PACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_REPACK, DIALOG
+    BEGIN
+        RIGHTMARGIN, 252
+        BOTTOMMARGIN, 158
+    END
+
+    IDD_OPTIMIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 163
+    END
+
+    IDD_PROCESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 374
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_PACK DLGINIT
+BEGIN
+    IDC_COMBOTYPE, 0x403, 4, 0
+0x4d58, 0x004c, 
+    IDC_COMBOTYPE, 0x403, 6, 0
+0x4c50, 0x5349, 0x0054, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_BINDIMAGE_DIALOG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 BindImage(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\BindImage.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
